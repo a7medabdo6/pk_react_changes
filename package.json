@@ -9,6 +9,7 @@
     "@fancyapps/ui": "^4.0.23",
     "@fingerprintjs/fingerprintjs": "^3.3.3",
     "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.11.3",
     "@material-ui/pickers": "^3.2.10",
     "@stripe/react-stripe-js": "^1.16.2",
     "@stripe/stripe-js": "^1.8.0",

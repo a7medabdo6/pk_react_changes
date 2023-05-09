@@ -21,6 +21,7 @@
   .bm-cross-button {
     height: 24px;
     width: 24px;
+    display: none;
   }
   
   /* Color/shape of close button cross */
@@ -35,6 +36,7 @@
   .bm-menu-wrap {
     position: fixed;
     height: 100%;
+    width: 50px !important;
   }
   
   /* General sidebar styles */
@@ -43,8 +45,7 @@
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
     /* height: auto !important; */
-    background: rgb(249,206,52);
-    background: linear-gradient(180deg, rgba(249,206,52,1) 0%, rgba(238,42,123,1) 35%, rgba(98,40,215,1) 100%) !important;
+    background: white !important;
   
   }
   
@@ -82,10 +83,10 @@
     align-items: center;
 }
 .bm-menu {
-  background: rgb(249,206,52);
-    background: linear-gradient(180deg, rgba(249,206,52,1) 0%, rgba(238,42,123,1) 35%, rgba(98,40,215,1) 100%) !important;
-      padding: 2.5em 0px;
+  background: white !important;
+  padding: 2.5em 0px;
     font-size: 1.15em;
+    border-right:1px solid #80808069;
 }
 a.main-header-menu.icon-with-round-hover,button.main-header-menu.icon-with-round-hover{
     padding: 20px !important;

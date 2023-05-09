@@ -13,7 +13,14 @@ import CreateContentCreatorModal from "../../helper/CreateContentCreatorModal";
 import LoginModal from "../../Model/LoginModal";
 import SignupModal from "../../Model/SignupModal";
 import NewMenu from "./NewMenu";
-
+import Icon from '@material-ui/core/Icon';
+import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined';
+import ExploreOutlinedIcon from '@material-ui/icons/ExploreOutlined';
+import TvOutlinedIcon from '@material-ui/icons/TvOutlined';
+import AddCircleOutlineOutlinedIcon from '@material-ui/icons/AddCircleOutlineOutlined';
+import MailOutlineOutlinedIcon from '@material-ui/icons/MailOutlineOutlined';
+import NotificationsOutlinedIcon from '@material-ui/icons/NotificationsOutlined';
+import PermIdentityOutlinedIcon from '@material-ui/icons/PermIdentityOutlined';
 let chatSocket;
 
 const HeaderIndex = (props) => {
@@ -116,12 +123,13 @@ const HeaderIndex = (props) => {
                   src={window.location.origin + "/assets/images/icons/home.svg"}
                 /> */}
                 {/* <i className='bx bx-home bx-lg'></i> */}
-                <Image
+                {/* <Image
                   src={
                     window.location.origin +
                     "/assets/images/icons/new/home-new-1.svg"
                   }
-                />
+                /> */}
+                <HomeOutlinedIcon style={{color:"black",fontSize:"30px"}}/>
               </Link>
               <Link
                 to={"/explore"}
@@ -134,12 +142,8 @@ const HeaderIndex = (props) => {
                   }
                 /> */}
                 {/* <i className='bx bx-compass bx-lg'></i> */}
-                <Image
-                  src={
-                    window.location.origin +
-                    "/assets/images/icons/new/compass-new-1.svg"
-                  }
-                />
+                <ExploreOutlinedIcon style={{color:"black",fontSize:"30px"}}/>
+
               </Link>
 
               {configuration.get("configData.is_one_to_many_call_enabled") ==
@@ -156,12 +160,9 @@ const HeaderIndex = (props) => {
                     }
                   /> */}
                   {/* <i className="bx bx-tv bx-lg"></i> */}
-                  <Image
-                    src={
-                      window.location.origin +
-                      "/assets/images/icons/new/tv-new-1.svg"
-                    }
-                  />
+                  <TvOutlinedIcon style={{color:"black",fontSize:"30px"}}/>
+
+                  
                 </Link>
               ) : (
                 ""
@@ -180,12 +181,9 @@ const HeaderIndex = (props) => {
                     }
                   /> */}
                   {/* <i className='bx bx-plus-circle bx-lg'></i> */}
-                  <Image
-                    src={
-                      window.location.origin +
-                      "/assets/images/icons/new/plus-square-new-1.svg"
-                    }
-                  />
+                 
+                   <AddCircleOutlineOutlinedIcon style={{color:"black",fontSize:"30px"}}/>
+                   
                 </Link>
               ) : (
                 <Link
@@ -199,12 +197,14 @@ const HeaderIndex = (props) => {
                       "/assets/images/icons/create-post.svg"
                     }
                   /> */}
-                  <Image
+                  {/* <Image
                     src={
                       window.location.origin +
                       "/assets/images/icons/new/plus-square-new-1.svg"
                     }
-                  />
+                  /> */}
+                       <MailOutlineOutlinedIcon style={{color:"black",fontSize:"30px"}}/>
+
                 </Link>
               )}
 
@@ -217,12 +217,14 @@ const HeaderIndex = (props) => {
                   src={window.location.origin + "/assets/images/icons/chat.svg"}
                 /> */}
                 {/* <i className='bx bx-chat bx-lg'></i> */}
-                <Image
+                {/* <Image
                   src={
                     window.location.origin +
                     "/assets/images/icons/new/mail-new-1.svg"
                   }
-                />
+                /> */}
+                <MailOutlineOutlinedIcon style={{color:"black",fontSize:"30px"}}/>
+
                 {/* <span className="main-header-menu__count"> 5 </span>  */}
                 {chatCount > 0 ? (
                   <Badge variant="light" className="badge-notify">
@@ -247,12 +249,14 @@ const HeaderIndex = (props) => {
                   }
                 /> */}
                 {/* <i className='bx bx-bell bx-lg'></i> */}
-                <Image
+                {/* <Image
                   src={
                     window.location.origin +
                     "/assets/images/icons/new/bell-new-1.svg"
                   }
-                />
+                /> */}
+                                       <NotificationsOutlinedIcon style={{color:"black",fontSize:"30px"}}/>
+
                 {bellCount > 0 ? (
                   <Badge variant="light" className="badge-notify">
                     {bellCount}
@@ -275,12 +279,14 @@ const HeaderIndex = (props) => {
                   src={window.location.origin + "/assets/images/icons/user.svg"}
                 /> */}
                 {/* <i className='bx bx-user-circle bx-lg'></i> */}
-                <Image
+                {/* <Image
                   src={
                     window.location.origin +
                     "/assets/images/icons/new/user-new-1.svg"
                   }
-                />
+                /> */}
+                  <PermIdentityOutlinedIcon style={{color:"black",fontSize:"30px"}}/>
+
               </Button>
             </nav>}/>
           <Container style={{display:"none"}}>
